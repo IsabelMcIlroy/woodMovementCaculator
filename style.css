@@ -5,7 +5,7 @@ body{
     background-image: url(images/wood.jpeg);
 }
 .mainArea{
-    background-color: #ead2ac;
+    background-color: #9c8e77;
     width: 80%;
     max-width: 350px;
     min-width: 275px;
@@ -32,7 +32,7 @@ h1{
 h4{
     margin-top: 0;
     margin-bottom: 0;
-    color: #717568;
+    color: #474942;
 }
 hr{
     color: #650d1b;
@@ -62,7 +62,7 @@ input, select{
 }
 
 /*Convert Btn*/
-.convert{
+.caculate{
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
     margin-left: 20%;
@@ -74,7 +74,7 @@ input, select{
     background-color: #650d1b;
 }
 
-.convert:hover{
+.caculate:hover{
     font-weight: bold;
     background-color: #9e162c;
     border-color: #9e162c;
