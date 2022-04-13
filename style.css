@@ -64,14 +64,20 @@ input, select{
     margin-left: 20%;
     width: 60%;
     padding: .5rem;
-    font-weight: 400;
+    font-weight: 500;
     color: aliceblue;
-    border: 2px solid #0c120c;
+    border: 2px solid #3b0710;
     border-radius: 15px;
     background-color: #650d1b;
 }
 
 .convert:hover{
     font-weight: bold;
-    background-color: #0c120c;
+    background-color: #9e162c;
+    border-color: #650d1b;
+}
+
+/*Results page*/
+h3{
+    color: #0c120c;
 }
