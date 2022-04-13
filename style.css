@@ -1,0 +1,59 @@
+body{
+    background-image: url(images/wood.jpeg);
+}
+.mainArea{
+    background-color: #b7adcf;
+    width: 350px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+/*Header area*/
+.header{
+   padding-top: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem; 
+}
+h1{
+    margin-bottom: 0;
+    padding-bottom: 0;
+    color: #650d1b;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+}
+h4{
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #717568;
+    font-family: 'Raleway', sans-serif;
+}
+hr{
+    color: #650d1b;
+}
+
+/*Main body */
+.mainBody{
+     padding-left: 2rem;
+     padding-right: 2rem;
+     padding-top: .5rem; 
+     padding-bottom: 2rem;
+ }
+p{
+    font-family: 'Raleway', sans-serif;
+    color:#0c120c;
+    font-weight: 500;
+}
+input{
+    position: right;
+    width: 80%;
+    text-align: right;
+    float: right;
+    clear: both;
+}
+select{
+    position: right;
+    width: 80%;
+    text-align: right;
+    float: right;
+    clear: both; 
+}
