@@ -3,7 +3,9 @@ body{
 }
 .mainArea{
     background-color: #b7adcf;
-    width: 350px;
+    width: 80%;
+    max-width: 350px;
+    min-width: 275px;
     height: 100%;
     margin: 0 auto;
 }
