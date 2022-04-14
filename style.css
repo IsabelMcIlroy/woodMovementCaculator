@@ -19,9 +19,13 @@ body{
 
 /*Header area*/
 .header{
-   padding-top: 1rem;
-    padding-left: 2rem;
-    padding-right: 2rem; 
+    margin-top: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem; 
+    background-image: url(images/treeLog.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 40%;
 }
 h1{
     margin-bottom: 0;
