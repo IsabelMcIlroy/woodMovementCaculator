@@ -33,14 +33,14 @@
             <p>
                 Expected Humidity:
             </p>
-            <input type="value">
+            <input type="value" placeholder="Enter percentage">
             <br>
 
             <p>
                 Wood Species:
             </p>
-            <select name="woodSpecies" id="woodSpecies">
-                <option value=""></option>
+            <select name="woodSpecies" id="woodSpecies" aria-placeholder="Enter wood species">
+                <option value="" id="select">Select wood species</option>
                 <option value="Birch">Birch</option>
                 <option value="Ceader">Ceader</option>
                 <option value="Cherry">Cherry</option>
@@ -53,7 +53,7 @@
                 Grain Orientation:
             </p>
             <select name="grainOrientation" id="grainOrientation">
-                <option value=""></option>
+                <option value="" id="select">Select grain orientation</option>
                 <option value="Flat sawn">Flat Sawn</option>
                 <option value="Rift Sawn">Rift Sawn</option>
             </select>
@@ -62,7 +62,7 @@
             <p>
                 Width of Board:
             </p>
-            <input type="value">
+            <input type="value" placeholder="Enter width in inches">
             <br>
 
             <button class="caculate">Caculate</button>
