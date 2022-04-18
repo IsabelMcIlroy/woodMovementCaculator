@@ -75,10 +75,15 @@
             <input type="value" placeholder="Enter width in inches">
             <br>
 
-            <button class="caculate">Caculate</button>
+            <button class="caculate" id="caculateButton">Caculate</button>
             <hr>
         </div>
+        <div id="modal" class="hide">
+            <div id="header"><button id="closeBtn" onclick="hideModal()">x</button></div>
+            <h1 id="result"></h1>
+            <h1 id="woodFact"></h1>
+        </div>
     </div>
-    <script src="scriptNine.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
