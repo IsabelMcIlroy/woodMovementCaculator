@@ -2,19 +2,13 @@
 const caculateButton = document.getElementById('caculateButton'); 
 caculateButton.addEventListener('click', (e) => {
     e.preventDefault();
-    if(caculateButton.innerText=="Caculate"){
-        caculateButton.innerText="Another Calc";
-        showModal();
-       }
-     else if(caculateButton.innerText=="Another Calc"){
-         caculateButton.innerText="Caculate";
-         location.reload();
-         }    
+        showModal();   
 })
 
 // Wood Fact
-const selectedWoodSpecies =  woodSpecies.options[woodSpecies.selectedIndex].text;
+
 function chooseWoodFact() {
+    const selectedWoodSpecies =  woodSpecies.options[woodSpecies.selectedIndex].text;
     console.log(selectedWoodSpecies.toString())
     if (selectedWoodSpecies == "Birch - White") {
         return aFact = 'White Birch wood comes from a tree. wood comes from a tree. wood comes from a tree.'  
