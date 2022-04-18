@@ -65,7 +65,7 @@ input, select{
     font-family: 'Roboto', sans-serif;
 }
 
-/*Convert Btn*/
+/*Caculate Btn*/
 .caculate{
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
@@ -77,7 +77,6 @@ input, select{
     border-radius: 15px;
     background-color: #650d1b;
 }
-
 .caculate:hover{
     font-weight: bold;
     background-color: #9e162c;
@@ -95,6 +94,7 @@ input, select{
     transform: translateX(-50%);
     border: .5rem solid #650d1b;
 }
+/* Result */
 #modal #result {
     color: #650d1b;
     margin: 0;
@@ -106,6 +106,7 @@ input, select{
     padding-right: 2rem;
     color: #474942;
 }
+/* Wood Fact */
 #modal #woodFact {
     color: #650d1b;
     margin: 0;
@@ -117,6 +118,7 @@ input, select{
     padding-right: 2rem;
     color: #474942;
 }
+/* Close Modal */
 .hide {
     display: none;
 }

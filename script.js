@@ -1,12 +1,13 @@
-// Caculate
+// Caculate button
 const caculateButton = document.getElementById('caculateButton'); 
 caculateButton.addEventListener('click', (e) => {
     e.preventDefault();
         showModal();   
 })
 
-// Wood Fact
+// Caculation
 
+// Wood Fact
 function chooseWoodFact() {
     const selectedWoodSpecies =  woodSpecies.options[woodSpecies.selectedIndex].text;
     console.log(selectedWoodSpecies.toString())
@@ -56,11 +57,11 @@ function chooseWoodFact() {
         return aFact = 'White Pine wood comes from a tree. wood comes from a tree. wood comes from a tree.'  
     }
     else {
-        return aFact = 'a tree can become wood.'
+        return aFact = 'a tree is wood.'
     }
 }
 
-// Modal
+// Open-close results modal
 const showModal = () => {
     chooseWoodFact();
     document.getElementById('result').innerText = "Result"
@@ -69,7 +70,6 @@ const showModal = () => {
     document.getElementById('fact').innerText = `${aFact}`;
     document.getElementById('modal').classList.remove("hide");
 }
-
 const hideModal = () => {
     document.getElementById('modal').classList.add("hide");
 }
