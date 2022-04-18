@@ -101,11 +101,21 @@ input, select{
     font-size: 2rem;
     padding-left: 2rem;
 }
+#modal #theResult{
+    padding-left: 2rem;
+    padding-right: 2rem;
+    color: #474942;
+}
 #modal #woodFact {
     color: #650d1b;
     margin: 0;
     font-size: 2rem;
-    padding: 2rem;
+    padding-left: 2rem;
+}
+#modal #fact{
+    padding-left: 2rem;
+    padding-right: 2rem;
+    color: #474942;
 }
 .hide {
     display: none;
