@@ -32,12 +32,12 @@ function getGrainOrientation() {
 function flat() {
     const selectedWoodSpecies =  woodSpecies.options[woodSpecies.selectedIndex].text;
     if (selectedWoodSpecies == "Birch - White") {
-        return maxShrinkage = 7.7
+        return maxShrinkage = 8.6
     }
     else if (selectedWoodSpecies == "Birch - Yellow") {
         return maxShrinkage = 9.5
     }
-    else if (selectedWoodSpecies == "Ceader") {
+    else if (selectedWoodSpecies == "Ceader - Western Red") {
         return maxShrinkage = 5
     }
     else if (selectedWoodSpecies == "Cherry") {
@@ -46,7 +46,7 @@ function flat() {
     else if (selectedWoodSpecies == "Douglas Fir") {
         return maxShrinkage = 7.3
     }
-    else if (selectedWoodSpecies == "Elm") {
+    else if (selectedWoodSpecies == "Elm - American") {
         return maxShrinkage = 9.5
     }
     else if (selectedWoodSpecies == "Hickory") {
@@ -67,14 +67,14 @@ function flat() {
     else if (selectedWoodSpecies == "Poplar") {
         return maxShrinkage = 8.2
     }
-    else if (selectedWoodSpecies == "Spruce") {
-        return maxShrinkage = 7.5
+    else if (selectedWoodSpecies == "Spruce - Black") {
+        return maxShrinkage = 6.8
     }
-    else if (selectedWoodSpecies == "Walnut") {
-        return maxShrinkage = 6.4
+    else if (selectedWoodSpecies == "Walnut - Black") {
+        return maxShrinkage = 7.8
     }
     else if (selectedWoodSpecies == "White Pine") {
-        return maxShrinkage = 6.9
+        return maxShrinkage = 7.4
     }
     else {
         maxShrinkage = 0
@@ -83,12 +83,12 @@ function flat() {
 function rift() {
     const selectedWoodSpecies =  woodSpecies.options[woodSpecies.selectedIndex].text;
     if (selectedWoodSpecies == "Birch - White") {
-        return maxShrinkage = 5.1
+        return maxShrinkage = 6.3
     }
     else if (selectedWoodSpecies == "Birch - Yellow") {
         return maxShrinkage = 7.3
     }
-    else if (selectedWoodSpecies == "Ceader") {
+    else if (selectedWoodSpecies == "Ceader - Western Red") {
         return maxShrinkage = 2.4
     }
     else if (selectedWoodSpecies == "Cherry") {
@@ -97,7 +97,7 @@ function rift() {
     else if (selectedWoodSpecies == "Douglas Fir") {
         return maxShrinkage = 4.5
     }
-    else if (selectedWoodSpecies == "Elm") {
+    else if (selectedWoodSpecies == "Elm - American") {
         return maxShrinkage = 4.2
     }
     else if (selectedWoodSpecies == "Hickory") {
@@ -118,14 +118,14 @@ function rift() {
     else if (selectedWoodSpecies == "Poplar") {
         return maxShrinkage = 4.6
     }
-    else if (selectedWoodSpecies == "Spruce") {
-        return maxShrinkage = 4.3
+    else if (selectedWoodSpecies == "Spruce - Black") {
+        return maxShrinkage = 4.1
     }
-    else if (selectedWoodSpecies == "Walnut") {
-        return maxShrinkage = 4.3
+    else if (selectedWoodSpecies == "Walnut - Black") {
+        return maxShrinkage = 5.5
     }
     else if (selectedWoodSpecies == "White Pine") {
-        return maxShrinkage = 4.5
+        return maxShrinkage = 4.1
     }
     else {
         maxShrinkage = 0
@@ -153,7 +153,7 @@ function chooseWoodFact() {
     else if (selectedWoodSpecies == "Birch - Yellow") {
         return aFact = 'Yellow Birch wood comes from a tree. wood comes from a tree. wood comes from a tree.'  
     }
-    else if (selectedWoodSpecies == "Ceader") {
+    else if (selectedWoodSpecies == "Ceader - Western Red") {
         return aFact = 'Ceader wood comes from a tree. wood comes from a tree. wood comes from a tree.'  
     }
     else if (selectedWoodSpecies == "Cherry") {
@@ -162,8 +162,8 @@ function chooseWoodFact() {
     else if (selectedWoodSpecies == "Douglas Fir") {
         return aFact = 'Douglas Fir wood comes from a tree. wood comes from a tree. wood comes from a tree.'  
     }
-    else if (selectedWoodSpecies == "Elm") {
-        return aFact = 'Elm wood comes from a tree. wood comes from a tree. wood comes from a tree.'  
+    else if (selectedWoodSpecies == "Elm - American") {
+        return aFact = 'American Elm wood comes from a tree. wood comes from a tree. wood comes from a tree.'  
     }
     else if (selectedWoodSpecies == "Hickory") {
         return aFact = 'Hickory wood comes from a tree. wood comes from a tree. wood comes from a tree.'  
@@ -183,10 +183,10 @@ function chooseWoodFact() {
     else if (selectedWoodSpecies == "Poplar") {
         return aFact = 'Poplar wood comes from a tree. wood comes from a tree. wood comes from a tree.'  
     }
-    else if (selectedWoodSpecies == "Spruce") {
+    else if (selectedWoodSpecies == "Spruce - Black") {
         return aFact = 'Spruce wood comes from a tree. wood comes from a tree. wood comes from a tree.'  
     }
-    else if (selectedWoodSpecies == "Walnut") {
+    else if (selectedWoodSpecies == "Walnut - Black") {
         return aFact = 'Walnut wood comes from a tree. wood comes from a tree. wood comes from a tree.'  
     }
     else if (selectedWoodSpecies == "White Pine") {
