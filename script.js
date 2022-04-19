@@ -6,28 +6,131 @@ caculateButton.addEventListener('click', (e) => {
         getWidth(); 
         getGrainOrientation(); 
         getHumdityRange();
+        console.log(maxShrinkage);
 })
 
 // Caculation (width * max shrinkage possible) * (heighest wood mc - lowest wood mc) / .30
 // width -> get entered width
 function getWidth() {
     width = document.getElementById("width").value;
-    console.log(width);
 }
 // Max Shrinkage possible - number dependent on type of wood and grain orientation
 function getGrainOrientation() {
-    grainOrientation = grainOrientation.options[grainOrientation.selectedIndex].text;
-    selectedWoodSpecies =  woodSpecies.options[woodSpecies.selectedIndex].text;
-    console.log(grainOrientation);
+    const selectGrainOrientation = grainOrientation.options[grainOrientation.selectedIndex].text;
+    const selectedWoodSpecies =  woodSpecies.options[woodSpecies.selectedIndex].text;
+    console.log(selectGrainOrientation);
     console.log(selectedWoodSpecies);
-    if (grainOrientation == "Flat Sawn") {
-        return maxShrinkage = 20
+    if (selectGrainOrientation == "Flat Sawn") {
+        flat();
     }
-    else if (grainOrientation == "Rift Sawn") {
-        return maxShrinkage = 10
+    else if (selectGrainOrientation == "Rift Sawn") {
+        rift();
     }
     else {
-        return maxShrinkage = 100
+        return maxShrinkage = 0
+    }
+    
+}
+function flat() {
+    const selectedWoodSpecies =  woodSpecies.options[woodSpecies.selectedIndex].text;
+    if (selectedWoodSpecies == "Birch - White") {
+        return maxShrinkage = 7.7
+    }
+    else if (selectedWoodSpecies == "Birch - Yellow") {
+        return maxShrinkage = 9.5
+    }
+    else if (selectedWoodSpecies == "Ceader") {
+        return maxShrinkage = 5
+    }
+    else if (selectedWoodSpecies == "Cherry") {
+        return maxShrinkage = 7.1
+    }
+    else if (selectedWoodSpecies == "Douglas Fir") {
+        return maxShrinkage = 7.3
+    }
+    else if (selectedWoodSpecies == "Elm") {
+        return maxShrinkage = 9.5
+    }
+    else if (selectedWoodSpecies == "Hickory") {
+        return maxShrinkage = 10.5
+    }
+    else if (selectedWoodSpecies == "Maple - Hard") {
+        return maxShrinkage = 9.9
+    }
+    else if (selectedWoodSpecies == "Maple - Soft") {
+        return maxShrinkage = 7.1
+    }
+    else if (selectedWoodSpecies == "Oak - Red") {
+        return maxShrinkage = 8.6
+    }
+    else if (selectedWoodSpecies == "Oak - White") {
+        return maxShrinkage = 10.5
+    }
+    else if (selectedWoodSpecies == "Poplar") {
+        return maxShrinkage = 8.2
+    }
+    else if (selectedWoodSpecies == "Spruce") {
+        return maxShrinkage = 7.5
+    }
+    else if (selectedWoodSpecies == "Walnut") {
+        return maxShrinkage = 6.4
+    }
+    else if (selectedWoodSpecies == "White Pine") {
+        return maxShrinkage = 6.9
+    }
+    else {
+        maxShrinkage = 0
+    }
+}
+function rift() {
+    const selectedWoodSpecies =  woodSpecies.options[woodSpecies.selectedIndex].text;
+    if (selectedWoodSpecies == "Birch - White") {
+        return maxShrinkage = 5.1
+    }
+    else if (selectedWoodSpecies == "Birch - Yellow") {
+        return maxShrinkage = 7.3
+    }
+    else if (selectedWoodSpecies == "Ceader") {
+        return maxShrinkage = 2.4
+    }
+    else if (selectedWoodSpecies == "Cherry") {
+        return maxShrinkage = 3.7
+    }
+    else if (selectedWoodSpecies == "Douglas Fir") {
+        return maxShrinkage = 4.5
+    }
+    else if (selectedWoodSpecies == "Elm") {
+        return maxShrinkage = 4.2
+    }
+    else if (selectedWoodSpecies == "Hickory") {
+        return maxShrinkage = 7
+    }
+    else if (selectedWoodSpecies == "Maple - Hard") {
+        return maxShrinkage = 4.8
+    }
+    else if (selectedWoodSpecies == "Maple - Soft") {
+        return maxShrinkage = 3.7
+    }
+    else if (selectedWoodSpecies == "Oak - Red") {
+        return maxShrinkage = 4
+    }
+    else if (selectedWoodSpecies == "Oak - White") {
+        return maxShrinkage = 5.6
+    }
+    else if (selectedWoodSpecies == "Poplar") {
+        return maxShrinkage = 4.6
+    }
+    else if (selectedWoodSpecies == "Spruce") {
+        return maxShrinkage = 4.3
+    }
+    else if (selectedWoodSpecies == "Walnut") {
+        return maxShrinkage = 4.3
+    }
+    else if (selectedWoodSpecies == "White Pine") {
+        return maxShrinkage = 4.5
+    }
+    else {
+        maxShrinkage = 0
     }
 }
 
@@ -35,18 +138,13 @@ function getGrainOrientation() {
 function getHumdityRange() {
     heighMC = document.getElementById("heighMC").value;
     lowMC = document.getElementById("lowMC").value;
-    humRange = heighMC - lowMC
+    humRange = (heighMC/100) - (lowMC/100)
     console.log(humRange);
-}
-function getHeigh() {
-    
-    console.log(heighMC);
 }
 
 // Wood Fact
 function chooseWoodFact() {
     const selectedWoodSpecies =  woodSpecies.options[woodSpecies.selectedIndex].text;
-    console.log(selectedWoodSpecies.toString())
     if (selectedWoodSpecies == "Birch - White") {
         return aFact = 'White Birch wood comes from a tree. wood comes from a tree. wood comes from a tree.'  
     }
