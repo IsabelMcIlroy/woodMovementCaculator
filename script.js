@@ -5,7 +5,7 @@ caculateButton.addEventListener('click', (e) => {
         showModal();   
 })
 
-// Caculation
+// Caculation (width * max shrinkage possible) * (heighest wood mc - lowest wood mc) / .30
 
 // Wood Fact
 function chooseWoodFact() {
