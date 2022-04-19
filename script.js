@@ -6,10 +6,10 @@ caculateButton.addEventListener('click', (e) => {
         getWidth(); 
         getGrainOrientation(); 
         getHumdityRange();
-        console.log(maxShrinkage);
+        caculation();
 })
 
-// Caculation (width * max shrinkage possible) * (heighest wood mc - lowest wood mc) / .30
+// Get numbers for caculation -> width, max shricakge possible and humidity range
 // width -> get entered width
 function getWidth() {
     width = document.getElementById("width").value;
@@ -18,8 +18,6 @@ function getWidth() {
 function getGrainOrientation() {
     const selectGrainOrientation = grainOrientation.options[grainOrientation.selectedIndex].text;
     const selectedWoodSpecies =  woodSpecies.options[woodSpecies.selectedIndex].text;
-    console.log(selectGrainOrientation);
-    console.log(selectedWoodSpecies);
     if (selectGrainOrientation == "Flat Sawn") {
         flat();
     }
@@ -133,13 +131,17 @@ function rift() {
         maxShrinkage = 0
     }
 }
-
 // Humdity range -> heightest wood mc - lowest wood mc
 function getHumdityRange() {
     heighMC = document.getElementById("heighMC").value;
     lowMC = document.getElementById("lowMC").value;
-    humRange = (heighMC/100) - (lowMC/100)
-    console.log(humRange);
+    humRange = (heighMC - lowMC) / 100
+}
+// Caculation (width * max shrinkage possible) * (heighest wood mc - lowest wood mc) / .30
+function caculation() {
+    const caculationResult = Math.round(((width * (maxShrinkage / 100)) * (humRange) / .30) * 100)/100
+    document.getElementById('theResult').innerHTML =
+                                      "The wood will move "+caculationResult+" inches";
 }
 
 // Wood Fact
@@ -149,7 +151,7 @@ function chooseWoodFact() {
         return aFact = 'White Birch wood comes from a tree. wood comes from a tree. wood comes from a tree.'  
     }
     else if (selectedWoodSpecies == "Birch - Yellow") {
-        return aFact = 'Yell Birch wood comes from a tree. wood comes from a tree. wood comes from a tree.'  
+        return aFact = 'Yellow Birch wood comes from a tree. wood comes from a tree. wood comes from a tree.'  
     }
     else if (selectedWoodSpecies == "Ceader") {
         return aFact = 'Ceader wood comes from a tree. wood comes from a tree. wood comes from a tree.'  
@@ -199,7 +201,6 @@ function chooseWoodFact() {
 const showModal = () => {
     chooseWoodFact();
     document.getElementById('result').innerText = "Result"
-    document.getElementById('theResult').innerText = "7";
     document.getElementById('woodFact').innerText = "Wood Fact"
     document.getElementById('fact').innerText = `${aFact}`;
     document.getElementById('modal').classList.remove("hide");
