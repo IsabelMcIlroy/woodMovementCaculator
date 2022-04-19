@@ -2,10 +2,46 @@
 const caculateButton = document.getElementById('caculateButton'); 
 caculateButton.addEventListener('click', (e) => {
     e.preventDefault();
-        showModal();   
+        showModal();
+        getWidth(); 
+        getGrainOrientation(); 
+        getHumdityRange();
 })
 
 // Caculation (width * max shrinkage possible) * (heighest wood mc - lowest wood mc) / .30
+// width -> get entered width
+function getWidth() {
+    width = document.getElementById("width").value;
+    console.log(width);
+}
+// Max Shrinkage possible - number dependent on type of wood and grain orientation
+function getGrainOrientation() {
+    grainOrientation = grainOrientation.options[grainOrientation.selectedIndex].text;
+    selectedWoodSpecies =  woodSpecies.options[woodSpecies.selectedIndex].text;
+    console.log(grainOrientation);
+    console.log(selectedWoodSpecies);
+    if (grainOrientation == "Flat Sawn") {
+        return maxShrinkage = 20
+    }
+    else if (grainOrientation == "Rift Sawn") {
+        return maxShrinkage = 10
+    }
+    else {
+        return maxShrinkage = 100
+    }
+}
+
+// Humdity range -> heightest wood mc - lowest wood mc
+function getHumdityRange() {
+    heighMC = document.getElementById("heighMC").value;
+    lowMC = document.getElementById("lowMC").value;
+    humRange = heighMC - lowMC
+    console.log(humRange);
+}
+function getHeigh() {
+    
+    console.log(heighMC);
+}
 
 // Wood Fact
 function chooseWoodFact() {
