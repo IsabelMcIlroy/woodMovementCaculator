@@ -132,4 +132,9 @@ input, select{
     background: #9c8e77;
     color: #650d1b;
     cursor: pointer;
+    font-size: larger;
+}
+#modal #header button:hover{
+    font-weight: bold;
+    font-size: larger;
 }
