@@ -148,43 +148,43 @@ function caculation() {
 function chooseWoodFact() {
     const selectedWoodSpecies =  woodSpecies.options[woodSpecies.selectedIndex].text;
     if (selectedWoodSpecies == "Birch - White") {
-        return aFact = 'White Birch wood comes from a tree. wood comes from a tree. wood comes from a tree.'  
+        return aFact = 'White Birch .'  
     }
     else if (selectedWoodSpecies == "Birch - Yellow") {
-        return aFact = 'Yellow Birch wood comes from a tree. wood comes from a tree. wood comes from a tree.'  
+        return aFact = 'Yellow Birch is pale and the sapwood is light to dark redish-brown and can sometimes be heavily figured. It is a moderlty hard and heavy wood, which is used in applications such as flooring, toys, doors, trim, cutting boards and toothpicks. Its relatively low price and good woodworking qualities make it ideal for cabinetwork.'  
     }
     else if (selectedWoodSpecies == "Ceader - Western Red") {
-        return aFact = 'Ceader wood comes from a tree. wood comes from a tree. wood comes from a tree.'  
+        return aFact = 'Ceader .'  
     }
     else if (selectedWoodSpecies == "Cherry") {
-        return aFact = 'Cherry wood comes from a tree. wood comes from a tree. wood comes from a tree.'  
+        return aFact = 'Cherry .'  
     }
     else if (selectedWoodSpecies == "Douglas Fir") {
         return aFact = 'Douglas Fir is a strong wood which is relatively easy to work. It is used commonly in the construction trades for things such as studs, beams, posts, flooring and siding in houses. Douglas Fir is also fairly decay resistant.'  
     }
     else if (selectedWoodSpecies == "Elm - American") {
-        return aFact = 'American Elm wood comes from a tree. wood comes from a tree. wood comes from a tree.'  
+        return aFact = 'American Elm .'  
     }
     else if (selectedWoodSpecies == "Hickory") {
-        return aFact = 'Hickory wood comes from a tree. wood comes from a tree. wood comes from a tree.'  
+        return aFact = 'Hickory .'  
     }
     else if (selectedWoodSpecies == "Maple - Hard") {
-        return aFact = 'Hard Maple wood comes from a tree. wood comes from a tree. wood comes from a tree.'  
+        return aFact = 'Hard Maple .'  
     }
     else if (selectedWoodSpecies == "Maple - Soft") {
-        return aFact = 'Soft Maple wood comes from a tree. wood comes from a tree. wood comes from a tree.'  
+        return aFact = 'Soft Maple .'  
     }
     else if (selectedWoodSpecies == "Oak - Red") {
-        return aFact = 'Red Oakwood comes from a tree. wood comes from a tree. wood comes from a tree.'  
+        return aFact = 'Red Oak is not as decay resistant as white oak so is used mainly in interior products, such as furniture and cabinets. The wood planes and polishes well but will tear on the lathe. Milling of sharp edges in oak should be avoid as they tend to break under wear and use.'  
     }
     else if (selectedWoodSpecies == "Oak - White") {
-        return aFact = 'White Oak wood comes from a tree. wood comes from a tree. wood comes from a tree.'  
+        return aFact = 'White Oak is a very decay-resistant wood and is quite heavy and hard. It is a good wood for outdoor use but is also used for a large variety of indoor prodcuts, such as millwork, furniture, flooring. Oak has a reputation of being a difficult wood to dry and is often left to dry out after use.'  
     }
     else if (selectedWoodSpecies == "Poplar") {
         return aFact = 'Poplar has a very pale almost white sapwood white its heartwood is a bit dark and the grain is fairly straight. It is used in items such as boxes, venner, plywood and pallets. Poplar is unfoutantly not a decay resistant wood.'  
     }
     else if (selectedWoodSpecies == "Spruce - Black") {
-        return aFact = 'Spruce wood comes from a tree. wood comes from a tree. wood comes from a tree.'  
+        return aFact = 'Spruce .'  
     }
     else if (selectedWoodSpecies == "Walnut - Black") {
         return aFact = 'Walnut is very decay resistant wood and was used for railway ties for a period of time. It is a very easy wood to work with and produces lovely cabinets and veneer.'  
