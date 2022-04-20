@@ -157,13 +157,13 @@ function chooseWoodFact() {
         return aFact = 'Ceader .'  
     }
     else if (selectedWoodSpecies == "Cherry") {
-        return aFact = 'Cherry .'  
+        return aFact = "Cherry wood was once known as poor man's mahgoany. Freshly cut the heartwood is pinkish-brown but ages to a lovely reddish-brown. It has a density that is hard enough to wear well but yet is still easy to work with. It is used for all kinds of furniture, cabinet as well as turnings and veneer."  
     }
     else if (selectedWoodSpecies == "Douglas Fir") {
         return aFact = 'Douglas Fir is a strong wood which is relatively easy to work. It is used commonly in the construction trades for things such as studs, beams, posts, flooring and siding in houses. Douglas Fir is also fairly decay resistant.'  
     }
     else if (selectedWoodSpecies == "Elm - American") {
-        return aFact = 'American Elm .'  
+        return aFact = 'American Elms grain is interlocked as it grows clockwise for a few years then counter clockwise, this makes it difficult to chisel and plane. Commercially it is used for products such as boxes and kitchen cabinets. Its strength and toughness make it useful for furniture.'  
     }
     else if (selectedWoodSpecies == "Hickory") {
         return aFact = 'Hickory .'  
