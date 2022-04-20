@@ -160,7 +160,7 @@ function chooseWoodFact() {
         return aFact = 'Cherry wood comes from a tree. wood comes from a tree. wood comes from a tree.'  
     }
     else if (selectedWoodSpecies == "Douglas Fir") {
-        return aFact = 'Douglas Fir wood comes from a tree. wood comes from a tree. wood comes from a tree.'  
+        return aFact = 'Douglas Fir is a strong wood which is relatively easy to work. It is used commonly in the construction trades for things such as studs, beams, posts, flooring and siding in houses. Douglas Fir is also fairly decay resistant.'  
     }
     else if (selectedWoodSpecies == "Elm - American") {
         return aFact = 'American Elm wood comes from a tree. wood comes from a tree. wood comes from a tree.'  
@@ -181,16 +181,16 @@ function chooseWoodFact() {
         return aFact = 'White Oak wood comes from a tree. wood comes from a tree. wood comes from a tree.'  
     }
     else if (selectedWoodSpecies == "Poplar") {
-        return aFact = 'Poplar wood comes from a tree. wood comes from a tree. wood comes from a tree.'  
+        return aFact = 'Poplar has a very pale almost white sapwood white its heartwood is a bit dark and the grain is fairly straight. It is used in items such as boxes, venner, plywood and pallets. Poplar is unfoutantly not a decay resistant wood.'  
     }
     else if (selectedWoodSpecies == "Spruce - Black") {
         return aFact = 'Spruce wood comes from a tree. wood comes from a tree. wood comes from a tree.'  
     }
     else if (selectedWoodSpecies == "Walnut - Black") {
-        return aFact = 'Walnut wood comes from a tree. wood comes from a tree. wood comes from a tree.'  
+        return aFact = 'Walnut is very decay resistant wood and was used for railway ties for a period of time. It is a very easy wood to work with and produces lovely cabinets and veneer.'  
     }
     else if (selectedWoodSpecies == "White Pine") {
-        return aFact = 'White Pine wood comes from a tree. wood comes from a tree. wood comes from a tree.'  
+        return aFact = 'White Pine, when quater sawn is the most well behaved of native Canadian woods. The ease of sanding, chiseling and plaing of pine makes it an ideal secondary or even primary wood for many projects. As an added bonus it produces and lovely clean woody odor.'  
     }
     else {
         return aFact = 'a tree is wood.'
