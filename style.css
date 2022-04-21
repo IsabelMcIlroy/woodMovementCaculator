@@ -87,12 +87,12 @@ input, select{
 #modal {
     width: 300px;
     height: 450px;
-    background: #9c8e77;
+    background: #d3c0a1;
     position: absolute;
     top: 20%;
     left: 50%;
     transform: translateX(-50%);
-    border: .5rem solid #650d1b;
+    border: 1px solid #650d1b;
 }
 /* Result */
 #modal #result {
@@ -124,13 +124,14 @@ input, select{
 }
 #modal #header {
     text-align: right;
-    padding: 5px 10px;
+    margin-bottom: 10px;
+    background: #650d1b;
 }
 #modal #header button {
     padding: 10px;
     border: 0px;
-    background: #9c8e77;
-    color: #650d1b;
+    background: #650d1b;
+    color: #9c8e77;
     cursor: pointer;
     font-size: larger;
 }
